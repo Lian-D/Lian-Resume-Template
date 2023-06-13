@@ -1,0 +1,158 @@
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{awesome-cv}
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-skyblue}
+% Uncomment if you would like to specify your own color
+% \definecolor{awesome}{HTML}{CA63A8}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+\definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{false}
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+%-------------------------------------------------------------------------------
+%	LETTER INFORMATION
+%	All of the below lines must be filled out
+%-------------------------------------------------------------------------------
+
+% fill ins
+\newcommand{\company}{COMPANY}
+\newcommand{\companyName}{\company\,}
+\newcommand{\postionName}{ Software Developer\,}
+\newcommand{\addresseeName} {Hiring Manager}
+% \newcommand{\postingName}{125784 S20 Software Developer 125784B\,}
+
+% The company being applied to
+\recipient
+  {\companyName Recruitment Team}
+    {\companyName \\ BC, Canada}
+    % {\companyName \\ STREET, BC\\ ZIP}
+ 
+% The date on the letter, default is the date of compilation
+\letterdate{\today}
+% The title of the letter
+\lettertitle{RE: Application for \postionName at \company}
+\color{black}
+% How the letter is opened
+\letteropening{Dear  \addresseeName,}
+% How the letter is closed
+\letterclosing{Thank you for your consideration,
+\\
+\\
+\includegraphics[width=1cm]{Resources/signature.png}}
+% Any enclosures with the letter
+% \letterenclosure[Attached]{Resume}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+% \includegraphics[width=\textwidth]{Resources/coopheader.png}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+% \makecvheader[R]
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {\today}
+  {Lian Duan - Cover Letter}
+  {}
+% Print the title with above letter informations
+\makelettertitle
+%-------------------------------------------------------------------------------
+%	LETTER CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvletter}
+\color{black}
+% \lettersection{About Me}
+% \lettersection{About Me}
+% Hello, I came across the listing for \postionName at \companyName posted on the UBC Student Co-Op Portal. I read through the criteria and eagerly applied as I believe I would be an excellent candidate for this position.
+
+% Include the company here
+% \lettersection{Why \company?}
+% \company's e-commerce software solutions are an amazing solution for small and big companies alike. The idea of software as a service strongly appeals to me. These combined with \company's unmatched internship program meant I was eager to send in an application.
+
+% \company's employee engagement software solutions resonate strongly with my own beliefs. The company statement that "Goodness (combined with great technology!) has a transformative power that enables businesses to truly engage with their people" stands out among the crowd of corporatism as a pillar of "goodness".   
+
+% \company's naval integrated navigation and tactical solutions are world class. It's undoubtable that \companyName leads the market in developing integrated bridge systems for many of the world's warships including the UK, U.S, New Zealand and Canada. The programs \companyName makes are quite literally the lifeline of a warship. As such, the prospect of mentorship from such a innovative and important company strongly appeals to a student like me. 
+
+%Below are all examples of past ones I have used
+% \company's innovative solutions for payment processing differ itself from the competitors and reinforce the fact that it is the \#1 payment processor in Canada. The traditional approach to work in a sea of start-up culture resonates with to me and the prospect of mentorship from such a innovative company strongly appeals to a student like me.  
+
+% \company's innovative cloud file storage solutions differ itself from the competitors and set itself a a leading company in cloud storage. \companyName goal of eliminating "data-blindness" provides a programmatic solution to a common problem with businesses. The start-up culture and family like support provide exceptional mentorship and are especially appealing for a new student seeking internships like me. 
+
+% \companyName's innovative communications solutions that enable data, audio and video for applications are a testament to why they are leading the industry. The fact that \companyName is a well known name in public safety, defense and private wireless networks and ranks in the top tech companies in Canada can not be understated. The prospect of mentorship from such a innovative company strongly appeals to a student like me.  
+
+% \companyName's unified network monitoring service are world class. I believe the no-excuse approach to problem solving is the best way to approach problems. The start-up culture and family like support provide exceptional mentorship and are especially appealing for a new student seeking internships like me.   
+
+% \lettersection{Ending}
+% I would love to learn more about the specifics of this position and would be eager to be provided the opportunity to meet in person and explore how I can apply my skills and abilities at \company. To arrange an interview, please contact the UBC sciences Co-op Office or contact me at 778-709-9416. 
+
+% \setlength\parindent{24pt} I am writing to express my interest in joining \companyName as a \postionName as posted on the UBC Student Co-Op Portal. The posting stood out as I not only fit the requirements, but also fit the company culture of consistently taking opportunities to learn and practicing new skills. I believe my experience in software development and alignment with \companyName's culture will enable me to be successful as a \postionName at \companyName.
+
+% \setlength\parindent{24pt} I am writing to express my interest in joining \companyName as a \postionName as posted on the UBC Student Co-Op Portal. The posting stood out as I not only fit the requirements, but share the curiousity for how Earth Science Classes in University translate to the unique niche of Earth Sciences and Software Development. I believe my experience in software development and my curiosity with \companyName's field will enable me to be successful as a \postionName at \companyName.
+
+% \setlength\parindent{24pt} I am writing to express my interest in joining \companyName as a \postionName as posted on the UBC Student Co-Op Portal. The posting stood out as I not only fit the requirements, but the position further reinforces my current experience working at LedgerDocs where I am responsible for producing solutions to streamline book-keeper workflow. I believe my experience in software development and alignment with \companyName's product will enable me to be successful as a \postionName at \companyName.
+
+% \setlength\parindent{24pt} I am writing to express my interest in joining \companyName as a \postionName as posted on the UBC Student Co-Op Portal. The posting stood out as I not only fit the requirements but share the same drive for learning cutting edge technologies and applying them to large impactful solutions . I believe my experience in software development and alignment with \companyName's culture will enable me to be successful as a \postionName at \companyName.
+
+\setlength\parindent{24pt} I am writing to express my interest in joining \companyName as a \postionName as posted on the UBC Student Co-Op Portal. The posting stood out as I not only fit the requirements but share the same drive for learning cutting edge technologies and applying them to large impactful solutions . I believe my experience in software development and alignment with \companyName's culture will enable me to be successful as a \postionName at \companyName.
+
+% \setlength\parindent{24pt}\color{black} I am writing to express my interest in joining \companyName as a \postionName as recommended to me by your colleague Natasha Carson. The posting stood out as I have fostered great interest SAP Concur's current tech stack. I believe my previous co-op experience in software development and affinity with \companyName's technical stack will enable me to be successful as a \postionName at \companyName.
+
+% \setlength\parindent{24pt}\color{black} I am writing to express my interest in joining \companyName as a \postionName as recommended to me by your colleague Annie Yao. The posting stood out as I have fostered great interest \companyName's current tech stack. I believe my previous co-op experience in software development and previous instructor experience will enable me to be successful as a \postionName at \companyName.
+
+% \setlength\parindent{24pt} One of my main strengths is that I can easily adapt to new environments by using my previous experience as building blocks to help support my growth both in and outside of software development. I quickly adapt to the workflow of new environments and can quickly fill in the potential gaps of my knowledge. My indomitable desire to learn and ability to adapt provide an invaluable toolbox of skills for me to take meaningful advantage of \companyName's stack and allow me to make clean, meaningful contributions to \company's growing code-base.
+
+% \setlength\parindent{24pt} I strongly believe my previous instructor experience with Cadets will be of benefit to Game Of App's. During my final 3 years, I was responsible for delivering high quality lessons dictated to classes of up to 30 cadets. During that time I explored effective ways to deliver information, increase engagement and foster trusting mentorships.
+
+\setlength\parindent{24pt} My two main strengths is my willingness to communicate and my team-player attitude. I am not afraid to communicate any difficulties I encounter while working as I believe that dishonesty will only slow down the team. Furthermore, I am always willing to do extra work if it means our team will make it to a deadline. These traits has been showcased most evidently while at my internship at LedgerDocs in-which I consistently offered to go into overtime to assist my senior developer with any extra issues blocking a release. Furthermore, I utilized the fast communications channels within the start-up and would communicate any troubles, roadblocks and ideas for the LedgerDocs platforms during weekly meetings with my senior developer, the product manager and the president. I believe these two strengths have provided me with a malleable toolbox in which I am able to slot myself in and succeed alongside any team.
+
+% \setlength\parindent{24pt} I easily adapt to new environments and expand my knowledge by using my previous experience as building blocks to help support my growth both in and outside of software development. My experience working with object oriented languages enabled me to learn PHP, Javascript, TypeScript, Vue.js and Node.js within a 1 year time frame during my two previous coops at LedgerDocs and Form Athletica. While learning new languages I continue to apply my previous knowledge of object oriented designs such as test driven development, design patterns and data structures. My determination to learn has introduced me to complex topics such as HTTP requests, Oauth token and API calls. My indomitable desire to learn and ability to adapt provide an invaluable toolbox of skills for me to take meaningful advantage of \companyName's stack and allow me to make clean, meaningful contributions to \company's growing code-base.
+
+
+% My experience working at LedgerDocs would allow me to seamlessly integrate into your team for the benefit of \company. At LedgerDocs I regularly worked with PHP, MySQL and JavaScript to develop our web platform solution for book-keepers all around North America. At this job I regularly interacted with the command line and was consistently exposed to working with AWS. I've worked with many API's in order to promote and enhance functionality on LedgerDocs and have experience working with OAuth 2.0 and Rest APIs.
+
+% My most recent project involved working with a small team of four in order to create a web application that uses php, HTML and SQL in order to showcase information regarding super hero's. Naturally, this involved creating queries, insert, delete and update statement in SQL and connecting the HTML page to our database which was hosted on MyRemoteSQL.
+
+% I believe I would be a good fit because most of my projects are primarily in Object Oriented Languages such as Java, C++ and JavaScript, An prime example is the voice assistant I created using various REST API's and IBM's Watson Cloud Services. In this program I have distinct classes following design patterns of inheritance and fields for each class to contain relevant data. In this project, I also created robust classes that dealt with exception are had code that would prevent the program from crashing by auto-correcting incorrect parameters. My other Java project, the password manager makes use of the observer pattern in order to run code when new inputs (accounts are inserted).
+
+% I believe my ability to compromise and communicate are my strongest skill sets. This is derived from working at Costco Wholesale as a Cashier Assistant, where I actively communicate and work with my superiors to deliver quality service that goes above and beyond common retail standards. The large customer pool at Costco Willingdon ensures that I must always be on my toes as there is large diversity in customer preference, service and attitude. On a regular basis, I am the front line in dealing with customer complaints, queries and issues.
+
+% \setlength\parindent{24pt} My experience working as a web developer at LedgerDocs has exalted my ability to quickly adapt to new stacks in an agile, fast paced environment. After learning the specifics of LedgerDoc's code-base through internal and external documentation, I was able to implement new features which have since been deployed in the production code-base. Given the small scale of a start-up, I was consistently expected to remain on my feet by acting as my own QA, debugger and developer. Furthermore, this position demanded that I familiarize myself with object oriented web application development MySQL and web services such as AWS and Intuit's SDKs. In addition to working multiple roles, I was expected to meet strict deadlines and balance my responsibilities appropriately. My experience working at the Ledgerdocs will allow me to easily and effectively integrate myself into the workflow at \companyName. 
+
+\setlength\parindent{24pt} Throughout my previous internships, I've consistently demonstrated my ability to remain flexible and quickly adapt to different stacks in an agile, fast paced environment. During my most recent internship at Form Athletica I was expected to quickly understand the code base of the back-end API and internal admin portal on-which our platform depended on. The design of the stack demanded that me to familiarize myself with MySQL, Sequelize, Swagger, Oauth, TypeScript and Express.JS while introducing me to AWS storage buckets, SNS and SES. After learning the specifics of the code base through internal and external documentation I was able to push meaningful pull requests to the production code base while insuring I was completing all tickets before the end of the sprint. I believe my experience working at the Form Athletica will allow me to seamlessly integrate myself into the workflow at \companyName. 
+
+% % \lettersection{Ending}
+% \setlength\parindent{24pt} I would love to learn more about the specifics of this position and would be eager to be provided the opportunity to meet in person or online and explore how I can apply my skills and abilities at \company. To arrange an interview, please contact the UBC sciences Co-op Office or email me at LianDuan64@gmail.com. 
+
+\setlength\parindent{24pt} I believe my team player attitude and my previous experience using a similar tech stack will enable me to be a successful \postionName. My previous co-op experience will allow me to seamlessly transition into the larger infrastructure of an international company such as \company. I would love the opportunity to discuss how I can be an asset to your team. To arrange an interview, please contact the UBC sciences Co-op Office or email me at LianDuan64@gmail.com. 
+
+% \setlength\parindent{24pt} I believe my team player attitude and my previous experience using a similar tech stack will enable me to be a successful \postionName. My previous co-op experience along with my previous cadet intructor experience would allow me to fit in with the culture and goals of \company. I would love the opportunity to discuss how I can be an asset to your team. To arrange an interview, please email me at LianDuan64@gmail.com. 
+
+\end{cvletter}
+%-------------------------------------------------------------------------------
+% Print the signature and enclosures with above letter informations
+\\
+\\
+\makeletterclosing
+\end{document}
